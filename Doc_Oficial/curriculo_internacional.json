@@ -1,0 +1,67 @@
+{
+  "_comentario": "Marco curricular internacional (no ligado a un país). Fuentes: CSTA K-12 CS Standards (vigente: revisión 2017; próxima revisión anunciada para 2026), DigComp 2.2, UNESCO ICT Competency Framework for Teachers. El agente hace lookup por banda_edad antes de generar cualquier clase.",
+
+  "bandas": [
+    {
+      "banda_edad": "5-7",
+      "nivel_csta": "1A",
+      "conceptos_clave": ["secuencias", "patrones_basicos", "hardware_software"],
+      "habilidades_esperadas": [
+        "seguir_y_crear_secuencias_de_pasos",
+        "reconocer_partes_basicas_de_una_computadora"
+      ],
+      "ejemplo_actividad": "Armar una 'receta' de pasos para un personaje en pantalla (ScratchJr)"
+    },
+    {
+      "banda_edad": "8-10",
+      "nivel_csta": "1B",
+      "conceptos_clave": ["algoritmos_simples", "bucles", "depuracion_basica", "representacion_de_datos"],
+      "habilidades_esperadas": [
+        "crear_programas_cortos_con_repeticion",
+        "identificar_y_corregir_errores_simples"
+      ],
+      "ejemplo_actividad": "Animación en Scratch que repite una acción (bucle) para contar una historia"
+    },
+    {
+      "banda_edad": "11-13",
+      "nivel_csta": "2",
+      "conceptos_clave": ["variables", "condicionales", "descomposicion_de_problemas", "redes_e_internet", "impacto_social_de_la_tecnologia"],
+      "habilidades_esperadas": [
+        "disenar_soluciones_descomponiendo_el_problema",
+        "usar_condicionales",
+        "explicar_como_viaja_la_informacion_en_una_red"
+      ],
+      "ejemplo_actividad": "Juego simple con puntaje (variables) y reglas (condicionales) en Scratch/App Inventor"
+    },
+    {
+      "banda_edad": "14-16",
+      "nivel_csta": "3A",
+      "conceptos_clave": ["estructuras_de_datos", "funciones", "abstraccion", "ciberseguridad_basica", "etica_de_datos"],
+      "habilidades_esperadas": [
+        "programar_con_funciones_reutilizables",
+        "identificar_riesgos_de_privacidad_y_seguridad",
+        "analizar_datos_simples"
+      ],
+      "ejemplo_actividad": "Analizar un dataset simple (Excel/Python) y sacar conclusiones; crear una app con inicio de sesión básico"
+    },
+    {
+      "banda_edad": "17-18",
+      "nivel_csta": "3B",
+      "conceptos_clave": ["algoritmos_complejos", "bases_de_datos", "ia_ml_basico", "impacto_etico_y_social_a_escala"],
+      "habilidades_esperadas": [
+        "disenar_sistemas_completos",
+        "evaluar_implicancias_eticas_de_la_ia",
+        "trabajar_con_bases_de_datos_reales"
+      ],
+      "ejemplo_actividad": "Proyecto final: app o sistema que resuelve un problema real del colegio/comunidad, con reflexión ética incluida"
+    }
+  ],
+
+  "fuentes": [
+    {"nombre": "CSTA K-12 Computer Science Standards", "version": "Revised 2017 (revisión 2026 en proceso, no publicada aún)", "url": "https://csteachers.org/k12standards/"},
+    {"nombre": "DigComp - European Digital Competence Framework", "version": "2.2"},
+    {"nombre": "UNESCO ICT Competency Framework for Teachers (ICT-CFT)", "version": "vigente"}
+  ],
+
+  "_nota_arquitectura": "Este archivo reemplaza, para el MVP, la Capa 2 (currículos por país) del documento de referencia. La arquitectura queda lista para intercambiar este archivo por currículos nacionales específicos en una fase futura, sin cambiar el resto del agente."
+}

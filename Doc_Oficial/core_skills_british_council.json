@@ -1,0 +1,47 @@
+{
+  "_comentario": "British Council Core Skills Framework: capa de habilidades transversales, complementaria a curriculo_internacional.json (que cubre contenido técnico CS/STEAM). Basado en investigación pública del British Council, que cruza el marco '6Cs' de Fullan & Langworthy con las habilidades transversales de UNESCO. El agente debe etiquetar cada actividad generada con 1-2 core_skills que refuerza, no solo con el concepto técnico.",
+
+  "fuente": {
+    "nombre": "British Council Core Skills and Competencies Framework",
+    "base_teorica": ["Fullan & Langworthy '6Cs' framework", "UNESCO transversal skills"],
+    "tipo_licencia": "investigacion_publica_citable",
+    "url_referencia": "https://www.britishcouncil.org.np/british-council-core-skills-and-competencies"
+  },
+
+  "core_skills": [
+    {
+      "id": "pensamiento_critico",
+      "nombre": "Pensamiento crítico y resolución de problemas",
+      "aplicacion_tipica_en_clase_cs": "Depuración de errores, descomposición de un problema en pasos"
+    },
+    {
+      "id": "comunicacion_colaboracion",
+      "nombre": "Comunicación y colaboración",
+      "aplicacion_tipica_en_clase_cs": "Trabajo en parejas/tríos por escasez de PCs, explicar el propio código a un compañero"
+    },
+    {
+      "id": "creatividad_imaginacion",
+      "nombre": "Creatividad e imaginación",
+      "aplicacion_tipica_en_clase_cs": "Diseño libre de un proyecto (ej. animación o juego) dentro de restricciones técnicas dadas"
+    },
+    {
+      "id": "ciudadania",
+      "nombre": "Ciudadanía",
+      "aplicacion_tipica_en_clase_cs": "Discusión sobre impacto social/ético de la tecnología, uso responsable de datos"
+    },
+    {
+      "id": "alfabetizacion_digital",
+      "nombre": "Alfabetización digital",
+      "aplicacion_tipica_en_clase_cs": "Uso crítico y seguro de herramientas digitales, reconocer información confiable en línea"
+    },
+    {
+      "id": "liderazgo_desarrollo_personal",
+      "nombre": "Liderazgo estudiantil y desarrollo personal",
+      "aplicacion_tipica_en_clase_cs": "Alumno guía a un grupo en una actividad práctica, autoevaluación de su propio avance"
+    }
+  ],
+
+  "_ejemplo_uso_por_el_agente": "Al generar la actividad 'Juego con puntaje y reglas en Scratch' (del marco curricular técnico), el agente etiqueta automáticamente: core_skills = ['pensamiento_critico', 'creatividad_imaginacion']. Esto se muestra al profesor como parte del plan de clase, dando justificación pedagógica más allá del contenido técnico.",
+
+  "_nota_arquitectura": "Esta capa se usa EN CONJUNTO con curriculo_internacional.json, no lo reemplaza. curriculo_internacional.json responde 'qué contenido técnico enseñar'; este archivo responde 'qué habilidad humana/transversal refuerza esa actividad'."
+}

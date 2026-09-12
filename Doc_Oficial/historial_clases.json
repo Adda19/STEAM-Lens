@@ -1,0 +1,33 @@
+{
+  "_comentario": "Historial de Clases: precargar 2-3 registros ficticios antes de la demo para mostrar cómo el agente usa el historial al diseñar la siguiente clase de un mismo grupo/tema.",
+
+  "grupo_id": "6A",
+  "tema_general": "Excel básico",
+
+  "clases": [
+    {
+      "clase_id": 1,
+      "fecha": "2026-08-10",
+      "tema": "Introducción a Excel: celdas, filas, columnas",
+      "duracion_minutos": 45,
+      "resultado_general": "buena",
+      "feedback_profesor": "Los alumnos entendieron rápido la navegación básica."
+    },
+    {
+      "clase_id": 2,
+      "fecha": "2026-08-17",
+      "tema": "Fórmulas SUMA y PROMEDIO",
+      "duracion_minutos": 45,
+      "resultado_general": "regular",
+      "feedback_profesor": "Les costó entender las referencias de celdas (ej. A1 vs A$1)."
+    }
+  ],
+
+  "objetivo_siguiente_clase": {
+    "tema_sugerido": "Referencias absolutas y relativas",
+    "razon": "Refuerzo directo del punto débil detectado en la clase 2 (referencias de celdas).",
+    "recomendacion_agente": "Agregar 10 minutos adicionales de práctica guiada antes de la actividad independiente."
+  },
+
+  "_ejemplo_uso_por_el_agente": "Al pedir 'diseña la siguiente clase de Excel para este grupo', el agente debe leer este historial y proponer directamente el refuerzo de referencias de celdas, sin que el profesor tenga que repetir el contexto."
+}

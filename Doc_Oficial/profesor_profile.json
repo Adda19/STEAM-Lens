@@ -1,0 +1,27 @@
+{
+  "_comentario": "Perfil de Profesor: memoria persistente de preferencias del docente. Para el MVP de hackathon, mantener solo los campos esenciales (metodología y duración); el resto es opcional/futuro.",
+
+  "profesor_id": "profesor_maria_001",
+  "nombre_referencia": "María",
+  "pais": "Colombia",
+  "idioma": "es-LATAM",
+
+  "asignaturas": ["Ciencias", "Informática"],
+  "grados_a_cargo": ["6to"],
+
+  "preferencias_pedagogicas": {
+    "metodologia_preferida": "aprendizaje_basado_en_proyectos",
+    "duracion_habitual_clase_minutos": 45,
+    "formato_preferido": "actividad_practica",
+    "tiempo_disponible_para_preparar_material": "bajo"
+  },
+
+  "materiales_habituales": ["Scratch", "fichas impresas"],
+
+  "_campos_futuros_no_mvp": {
+    "experiencia_anios": null,
+    "feedback_historico_general": null
+  },
+
+  "_ejemplo_uso_por_el_agente": "Para María, priorizar una actividad práctica corta de 45 min en vez de una exposición teórica de 30 min."
+}

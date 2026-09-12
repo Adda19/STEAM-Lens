@@ -1,0 +1,37 @@
+{
+  "_comentario": "Aula Profile: contexto real del aula que el agente consulta antes de diseñar cualquier clase. Precargar con datos reales o ficticios del colegio antes de la demo.",
+
+  "aula_id": "aula_informatica_01",
+  "pais": "Colombia",
+  "ciudad": "Bogotá",
+  "nivel_educativo": "Primaria",
+  "grado": "6to",
+
+  "alumnos": {
+    "cantidad_total": 32,
+    "necesidades_especiales": [
+      {
+        "tipo": "dificultad_lectura",
+        "cantidad": 3
+      }
+    ]
+  },
+
+  "tecnologia": {
+    "computadores": 12,
+    "proyector": true,
+    "internet": true,
+    "celulares_permitidos": false,
+    "sistema_operativo": "Windows",
+    "software_disponible": ["Google Chrome", "Scratch", "LibreOffice"],
+    "permite_instalar_software_nuevo": false
+  },
+
+  "restricciones": {
+    "duracion_clase_minutos": 45,
+    "tamano_aula": "pequeña",
+    "notas": "No se puede instalar software nuevo sin autorización de sistemas."
+  },
+
+  "_ejemplo_uso_por_el_agente": "Con 32 alumnos y 12 PCs, el agente debe razonar en grupos (ej. parejas o tríos) en lugar de asumir 1 PC por alumno."
+}
