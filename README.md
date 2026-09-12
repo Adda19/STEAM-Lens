@@ -4,6 +4,7 @@
 
 🌐 **En vivo / Live:** https://steamlens.soymaker.tech/
 🤖 **Bot de Telegram / Telegram bot:** https://t.me/STEAM_Lens_bot
+Make with/Hecho con **Codex**
 
 [🇪🇸 Español](#español) · [🇬🇧 English](#english)
 
@@ -17,7 +18,7 @@ STEAM Lens es un asistente de IA para docentes y curiosos que convierte un tema,
 
 No es un generador genérico de texto: cada sesión se diseña con **respaldo pedagógico verificable** (currículo internacional por banda de edad, habilidades transversales, contexto real de aula) y nunca inventa un enlace, un video o una fuente — cuando no encuentra respaldo, lo dice explícitamente en vez de fingir que sí lo tiene.
 
-### Por qué vale la pena probarlo (para los jurados)
+### Por qué vale la pena probarlo
 
 - **Agente conversacional real, no un formulario**: en Telegram se puede escribir en lenguaje natural ("hazla de 30 minutos", "adáptala a 6 años", "más práctica") y el agente decide si preguntar, generar, revisar o simplemente conversar — sin gastar una llamada de IA en los pasos que ya se pueden resolver con botones o texto directo (la edad como número, por ejemplo).
 - **Grounding real, no relleno**: antes de diseñar cualquier sesión, el agente consulta `Doc_Oficial/` — un conjunto de JSON validados por humanos (currículo internacional CSTA/DigComp/UNESCO por banda de edad, marco de habilidades transversales del British Council, perfil de aula y de docente, historial de clases) — y **cita exactamente qué documento respaldó cada parte** de la sesión en el PDF final. Si para algo no encontró respaldo, lo dice ("conocimiento general, verificar antes de usar") en vez de generar una alucinación silenciosa.
@@ -47,9 +48,6 @@ No es un generador genérico de texto: cada sesión se diseña con **respaldo pe
 - **PDF**: generado en memoria con ReportLab, localizado en los tres idiomas.
 - **Despliegue**: Ubuntu + nginx (proxy inverso y HTTPS con Let's Encrypt) + dos servicios `systemd` independientes (web y bot), cada uno con reinicio automático.
 
-### Construido con
-
-Este proyecto se desarrolló con **[Claude Code](https://claude.com/claude-code)** (Anthropic) como asistente de programación de principio a fin — diseño, implementación, pruebas y despliegue. El stack de producción es **Django, OpenAI (Responses API), la API oficial de Bot de Telegram (cliente propio sobre `httpx`, sin frameworks de terceros), ReportLab y la API de Google Drive**.
 
 ### Correrlo localmente
 
@@ -82,7 +80,7 @@ STEAM Lens is an AI teaching assistant that turns a topic, a photo, or a documen
 
 It isn't a generic text generator: every lesson is designed with **verifiable pedagogical grounding** (international curriculum by age band, transversal core skills, real classroom context) and never fabricates a link, video, or source — when it can't find grounding, it says so explicitly instead of pretending it did.
 
-### Why it's worth testing (for judges)
+### Why it's worth testing
 
 - **A real conversational agent, not a form**: in Telegram you can write in natural language ("make it 30 minutes", "adapt it for age 6", "more hands-on") and the agent decides whether to ask, generate, revise, or just talk — without spending an AI call on steps that a button or a bare number can resolve directly (age, for instance).
 - **Real grounding, not filler**: before designing any lesson, the agent consults `Doc_Oficial/` — a set of human-validated JSON files (international curriculum by age band aligned to CSTA/DigComp/UNESCO, the British Council transversal-skills framework, a classroom and teacher profile, class history) — and **cites exactly which document backed each part** of the lesson in the final PDF. When something isn't grounded, it says so ("general knowledge, verify before use") instead of silently hallucinating.
@@ -112,13 +110,7 @@ It isn't a generic text generator: every lesson is designed with **verifiable pe
 - **PDF**: generated in memory with ReportLab, localized in all three languages.
 - **Deployment**: Ubuntu + nginx (reverse proxy and HTTPS via Let's Encrypt) + two independent `systemd` services (web and bot), each with automatic restart.
 
-### Built with
 
-This project was built with **[Claude Code](https://claude.com/claude-code)** (Anthropic) as the AI pair-programmer end to end — design, implementation, tests, and deployment. The production stack is **Django, OpenAI (Responses API), the official Telegram Bot API (a hand-written client over `httpx`, no third-party framework), ReportLab, and the Google Drive API**.
-
-### Running it locally
-
-Full instructions and test commands in [`docs/OPERACION.md`](docs/OPERACION.md) (web) and [`docs/TELEGRAM.md`](docs/TELEGRAM.md) (bot, including how to connect Google Drive). In short:
 
 ```powershell
 python -m venv .venv
@@ -131,8 +123,3 @@ python -m venv .venv
 ```
 
 Requires `OPENAI_API_KEY` and `TELEGRAM_BOT_TOKEN` in `.env` (see `.env.example`); `GOOGLE_OAUTH_*` is optional, only needed for `/drive`.
-
-### More documents
-
-- [Original MVP specification](STEAM%20Lens%20%E2%80%94%20Especificaci%C3%B3n%20del%20MVP%20para%20Hackathon.md) (Spanish)
-- [Operation (web)](docs/OPERACION.md) · [Telegram (bot, Doc_Oficial, memory, Drive)](docs/TELEGRAM.md) · [Decision log](docs/RETOMA.md)
